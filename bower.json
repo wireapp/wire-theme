@@ -1,0 +1,21 @@
+{
+  "name": "wire-theme",
+  "main": ".app/style/wire-theme.less",
+  "ignore": [
+    "bower.json",
+    "bower_components",
+    "Gruntfile.coffee",
+    "index.html",
+    "node_modules",
+    "package.json",
+    "README.md",
+    "app/script",
+    "dist",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wireapp/wire-theme"
+  },
+  "private": true
+}

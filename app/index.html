@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- Wire, Copyright (C) 2016 Wire Swiss GmbH -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wire Themes</title>
+    <link href="/style/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="themes">
+      <div class="theme-blue"><button class="btn-theme" data-theme="theme-blue">blue</button></div>
+      <div class="theme-green"><button class="btn-theme" data-theme="theme-green">green</button></div>
+      <div class="theme-gray"><button class="btn-theme" data-theme="theme-gray">gray</button></div>
+      <div class="theme-orange"><button class="btn-theme" data-theme="theme-orange">orange</button></div>
+      <div class="theme-pink"><button class="btn-theme" data-theme="theme-pink">pink</button></div>
+      <div class="theme-purple"><button class="btn-theme" data-theme="theme-purple">purple</button></div>
+      <div class="theme-red"><button class="btn-theme" data-theme="theme-red">red</button></div>
+      <div class="theme-yellow"><button class="btn-theme" data-theme="theme-yellow">yellow</button></div>
+    </div>
+
+
+    <div class="content">
+      <div id="app" class="theme-blue">
+        <h1 class="text-theme text-center">Wire Themes</h1>
+        <h2>Intro</h2>
+        <p>
+          This library is dealing only with the colors. Different kind of colors
+          but only colors.
+        </p>
+        <p>
+          You should include only the <code>wire-theme.less</code>
+          into your project. The rest of the styles that you can find here are
+          only serve as an example.
+        </p>
+        <h2>.text-theme</h2>
+        <p>
+          This is just a simple text that is not affected by the theme colors.
+        </p>
+        <p class="text-theme">
+          This text is affected by the theme color because it has the <code>text-theme</code> class.
+        </p>
+        <p>
+          It could also be just <span class="text-theme">part</span> of the <span class="text-theme">text</span>.
+        </p>
+        <p>
+          The links are <a href="#">automatically</a> taking the theme color without extra classes.
+          But they are a bit darker than the normal text.
+        </p>
+        <p class="text-theme">
+          They are darker because if the whole text is themed, then you <a href="#">should</a> be able to find the link. If it's not underlined.
+        </p>
+
+        <h2>.bg-theme</h2>
+        <div class="panel bg-theme">
+          <h3 class="text-theme">Backrounds with colors! Yeah..</h3>
+          <p>If you need something that has a background color of the theme. Then just use the <code>bg-theme</code> class on that element.</p>
+          <p>This thing has some special powers though. When you are using the <code>text-theme</code> here, it will be <span class="text-theme">white</span>.</p>
+          <p>The links will be also <a href="#">highlighted</a> automatically.</p>
+        </div>
+
+        <h2>.btn-theme &amp; .btn-outline-theme</h2>
+        <div class="panel border-theme outlines">
+          <p>
+            If you need a button that matches the theme color, then add the <code>btn-theme</code> class.
+            Please note that only the colors are being manipulated by this module.
+          </p>
+          <button class="btn-theme">Button</button>
+          <button class="btn-theme">Another Button</button>
+          <button class="btn-theme">Press Me</button>
+          <button class="btn-outline-theme">Button</button>
+          <button class="btn-outline-theme">Another Button</button>
+          <button class="btn-outline-theme">Press Me</button>
+        </div>
+        <br>
+        <div class="panel bg-theme">
+          <p class="text-theme">When we have buttons on something that has already a background, then the buttons are a bit darker.</p>
+          <button class="btn-theme">Button</button>
+          <button class="btn-theme">Another Button</button>
+          <button class="btn-theme">Press Me</button>
+        </div>
+
+        <h2>.btn</h2>
+        <div class="panel border-theme outlines">
+          <p>
+            For better handling of buttons add the <code>btn</code> class.
+          </p>
+          <p>
+            <button class="btn btn-theme btn-lg">Button Large</button>
+            <button class="btn btn-outline-theme btn-lg">Button Large</button>
+            <button class="btn btn-theme btn-lg" disabled>Disabled</button>
+            <button class="btn btn-outline-theme btn-lg" disabled>Disabled</button>
+          </p>
+          <p>
+            <button class="btn btn-theme">Button Normal</button>
+            <button class="btn btn-outline-theme">Button Normal</button>
+            <button class="btn btn-theme" disabled>Disabled</button>
+            <button class="btn btn-outline-theme" disabled>Disabled</button>
+          </p>
+          <p>
+            <button class="btn btn-theme btn-sm">Button Small</button>
+            <button class="btn btn-outline-theme btn-sm">Button Small</button>
+            <button class="btn btn-theme btn-sm" disabled>Disabled</button>
+            <button class="btn btn-outline-theme btn-sm" disabled>Disabled</button>
+          </p>
+          <p>
+            <button class="btn btn-theme btn-xs">Button XSmall</button>
+            <button class="btn btn-outline-theme btn-xs">Button XSmall</button>
+            <button class="btn btn-theme btn-xs" disabled>Disabled</button>
+            <button class="btn btn-outline-theme btn-xs" disabled>Disabled</button>
+          </p>
+        </div>
+
+        <h2>.border-theme</h2>
+        <p class="panel border-theme">
+          If something has <span class="border border-theme">border</span> you can add a <code>border-theme</code> to change the border color.
+        </p>
+        <p class="panel bg-theme">
+          When the same border is on a <span class="border border-theme">background</span> then it will be slighlty darker.
+          <span class="text-theme">But maybe it should be white?!?</span>
+        </p>
+
+        <h2>.bg-hover-theme</h2>
+        <div class="panel border-theme">
+          <ul class="menu-example border-theme">
+            <li><a class="bg-hover-theme" href="#">This menu</a></li>
+            <li><a class="bg-hover-theme" href="#">Is not part</a></li>
+            <li><a class="bg-hover-theme" href="#">Of the theme</a></li>
+          </ul>
+        </div>
+        <h2>.range-theme</h2>
+        <div class="panel border-theme">
+          <ul class="slider-example">
+            <li><input class="range-theme" type="range" min="0" max="2" value="0"></li>
+            <li><input class="range-theme" type="range" min="0" max="9" value="7"></li>
+            <li><input class="range-theme" type="range" min="0" max="100" value="50"></li>
+          </ul>
+        </div>
+
+        <h2 class="border-theme">SVG (inline)</h2>
+        <p>
+          For inline SVG simply add the class <code>text-theme</code> and it will be treated as a text.
+        </p>
+        <div class="panel border-theme">
+          <svg class="w svg-theme" width="140" height="116" viewBox="0 0 140 116" xmlns="http://www.w3.org/2000/svg">
+            <path class="fill-theme" d="M140 71.875C140 95.653 120.735 115 96.895 115c-10.108 0-19.264-3.503-26.635-9.322-7.37 5.82-16.744 9.322-26.85 9.322C19.57 115 0 95.653 0 71.875V4.107h8.235v67.768c0 19.25 15.787 34.91 35.087 34.91 7.774 0 15.026-2.57 20.84-6.864C57.66 92.373 53.53 82.585 53.53 71.876V16.43C53.53 7.37 60.92 0 70 0c9.08 0 16.47 7.37 16.47 16.43v55.445c0 10.71-3.87 20.497-10.373 28.046 5.815 4.294 13.068 6.866 20.84 6.866 19.3 0 34.828-15.66 34.828-34.91V4.105H140v67.77zM78.235 16.43c0-4.532-3.694-8.216-8.235-8.216-4.54 0-8.235 3.684-8.235 8.215v55.445c0 8.546 3.105 16.375 8.235 22.45 5.13-6.075 8.235-13.904 8.235-22.45V16.43z"/>
+          </svg>
+
+          <svg class="svg-theme" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+			      <circle class="fill-theme" opacity=".16" cx="9" cy="9" r="9"/>
+			      <circle class="fill-theme" cx="9" cy="9" r="3"/>
+			      <circle class="fill-theme" opacity=".32" cx="9" cy="9" r="6"/>
+					</svg>
+
+          <svg class="platform svg-theme" width="288" height="288" viewBox="0 0 288 288" xmlns="http://www.w3.org/2000/svg">
+            <rect class="stroke-theme" stroke="#000" fill="none" x="1" y="1" width="286" height="286" rx="4"/>
+            <path class="fill-theme" d="M69.596 108.243c-6.992 0-12.596 5.67-12.596 12.618v52.917c0 7.004 5.66 12.618 12.596 12.618 6.99 0 12.595-5.67 12.595-12.618V120.86c0-6.948-5.658-12.617-12.594-12.617zm101.71-47.525l8.82-16.12c.445-.833.168-1.89-.664-2.39-.833-.444-1.942-.166-2.386.723l-8.878 16.287c-7.49-3.335-15.87-5.225-24.748-5.225-8.823 0-17.2 1.835-24.637 5.17l-8.878-16.23c-.444-.835-1.553-1.168-2.386-.723-.833.443-1.166 1.555-.722 2.39l8.823 16.118c-17.312 8.95-29.02 25.958-29.02 45.524h113.64c0-19.566-11.653-36.575-28.965-45.524zM117.592 85.62c-2.608 0-4.772-2.112-4.772-4.78 0-2.613 2.11-4.78 4.773-4.78 2.608 0 4.772 2.167 4.772 4.78 0 2.668-2.11 4.78-4.772 4.78zm51.77 0c-2.608 0-4.772-2.112-4.772-4.78 0-2.613 2.11-4.78 4.773-4.78 2.608 0 4.772 2.167 4.772 4.78-.056 2.612-2.164 4.78-4.772 4.78zm-82.29 25.013v82.043c0 7.448 5.994 13.507 13.485 13.507h9.155v28.014c0 6.948 5.66 12.618 12.596 12.618 6.99 0 12.595-5.67 12.595-12.673v-28.015h17.035v28.015c0 6.948 5.66 12.617 12.595 12.617 6.992 0 12.596-5.67 12.596-12.618v-28.015h9.212c7.435 0 13.484-6.003 13.484-13.507v-82.043l-112.752.056zm142.882 10.228c0-7.003-5.66-12.617-12.595-12.617-6.992 0-12.596 5.67-12.596 12.618v52.917c0 7.004 5.66 12.618 12.596 12.618 6.99 0 12.595-5.67 12.595-12.618V120.86z"/>
+          </svg>
+
+          <svg class="platform svg-theme" width="288" height="288" viewBox="0 0 288 288" xmlns="http://www.w3.org/2000/svg">
+            <circle class="stroke-theme" stroke="#000" fill="none" cx="144" cy="144" r="143"/>
+            <path class="fill-theme" d="M194.055 71l-50.34 66.183L94.516 71h-7.396l53.183 70.444L82 217h6.826l54.89-71.296L198.89 217H206l-58.587-75.556L200.88 71h-6.825z"/>
+          </svg>
+
+          <svg class="wire svg-theme" width="360" height="116" viewBox="0 0 360 116" xmlns="http://www.w3.org/2000/svg">
+            <path class="fill-theme" d="M131.27 71.915c0 19.232-15.472 34.878-34.7 34.878-7.745 0-14.97-2.57-20.765-6.858 6.48-7.542 10.336-17.32 10.336-28.02l.015-55.5C86.155 7.364 78.793 0 69.745 0c-9.05 0-16.41 7.364-16.41 16.414l-.015 55.5c0 10.7 4.116 20.48 10.594 28.02-5.793 4.29-13.02 6.86-20.764 6.86-19.23 0-34.958-15.647-34.958-34.88V4.21H-.013v67.705C-.013 95.67 19.483 115 43.237 115c10.07 0 19.41-3.5 26.752-9.313C77.332 111.5 86.455 115 96.526 115c23.752 0 42.947-19.33 42.947-43.085V4.21h-8.205v67.705zm-61.54 22.43c-5.11-6.07-8.205-13.892-8.205-22.43l.014-55.5c0-4.527 3.68-8.207 8.205-8.207 4.524 0 8.205 3.68 8.205 8.206l-.015 55.5c0 8.54-3.093 16.36-8.205 22.43zM164.103 3.987h8.205v108.84h-8.205V3.986zM244.143 2.09c-16.19 0-30.504 8.193-39.015 20.652V3.987h-8.205v108.84h8.205V49.324h.005c0-21.512 17.5-39.014 39.01-39.014V2.09"/>
+            <path class="fill-theme" d="M265.323 95.457l73.744-73.826c-.89-1.028-1.82-2.033-2.795-3.01-21.995-22.018-57.782-22.018-79.776 0-21.994 22.02-21.994 57.847 0 79.866 21.99 22.016 57.77 22.02 79.766.01l-5.802-5.81c-17.818 17.83-46.22 18.75-65.137 2.77zm-3.026-71.028c17.82-17.84 46.228-18.763 65.147-2.78l-67.922 68c-15.966-18.942-15.043-47.383 2.775-65.22z"/>
+          </svg>
+        </div>
+
+        <p>
+          And the same SVGs on a background of a theme.
+        </p>
+        <div class="panel bg-theme">
+          <svg class="w svg-theme" width="140" height="116" viewBox="0 0 140 116" xmlns="http://www.w3.org/2000/svg">
+            <path class="fill-theme" d="M140 71.875C140 95.653 120.735 115 96.895 115c-10.108 0-19.264-3.503-26.635-9.322-7.37 5.82-16.744 9.322-26.85 9.322C19.57 115 0 95.653 0 71.875V4.107h8.235v67.768c0 19.25 15.787 34.91 35.087 34.91 7.774 0 15.026-2.57 20.84-6.864C57.66 92.373 53.53 82.585 53.53 71.876V16.43C53.53 7.37 60.92 0 70 0c9.08 0 16.47 7.37 16.47 16.43v55.445c0 10.71-3.87 20.497-10.373 28.046 5.815 4.294 13.068 6.866 20.84 6.866 19.3 0 34.828-15.66 34.828-34.91V4.105H140v67.77zM78.235 16.43c0-4.532-3.694-8.216-8.235-8.216-4.54 0-8.235 3.684-8.235 8.215v55.445c0 8.546 3.105 16.375 8.235 22.45 5.13-6.075 8.235-13.904 8.235-22.45V16.43z"/>
+          </svg>
+
+          <svg class="svg-theme" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+			      <circle class="fill-theme" opacity=".16" cx="9" cy="9" r="9"/>
+			      <circle class="fill-theme" cx="9" cy="9" r="3"/>
+			      <circle class="fill-theme" opacity=".32" cx="9" cy="9" r="6"/>
+					</svg>
+
+          <svg class="platform svg-theme" width="288" height="288" viewBox="0 0 288 288" xmlns="http://www.w3.org/2000/svg">
+            <rect class="stroke-theme" stroke="#000" fill="none" x="1" y="1" width="286" height="286" rx="4"/>
+            <path class="fill-theme" d="M69.596 108.243c-6.992 0-12.596 5.67-12.596 12.618v52.917c0 7.004 5.66 12.618 12.596 12.618 6.99 0 12.595-5.67 12.595-12.618V120.86c0-6.948-5.658-12.617-12.594-12.617zm101.71-47.525l8.82-16.12c.445-.833.168-1.89-.664-2.39-.833-.444-1.942-.166-2.386.723l-8.878 16.287c-7.49-3.335-15.87-5.225-24.748-5.225-8.823 0-17.2 1.835-24.637 5.17l-8.878-16.23c-.444-.835-1.553-1.168-2.386-.723-.833.443-1.166 1.555-.722 2.39l8.823 16.118c-17.312 8.95-29.02 25.958-29.02 45.524h113.64c0-19.566-11.653-36.575-28.965-45.524zM117.592 85.62c-2.608 0-4.772-2.112-4.772-4.78 0-2.613 2.11-4.78 4.773-4.78 2.608 0 4.772 2.167 4.772 4.78 0 2.668-2.11 4.78-4.772 4.78zm51.77 0c-2.608 0-4.772-2.112-4.772-4.78 0-2.613 2.11-4.78 4.773-4.78 2.608 0 4.772 2.167 4.772 4.78-.056 2.612-2.164 4.78-4.772 4.78zm-82.29 25.013v82.043c0 7.448 5.994 13.507 13.485 13.507h9.155v28.014c0 6.948 5.66 12.618 12.596 12.618 6.99 0 12.595-5.67 12.595-12.673v-28.015h17.035v28.015c0 6.948 5.66 12.617 12.595 12.617 6.992 0 12.596-5.67 12.596-12.618v-28.015h9.212c7.435 0 13.484-6.003 13.484-13.507v-82.043l-112.752.056zm142.882 10.228c0-7.003-5.66-12.617-12.595-12.617-6.992 0-12.596 5.67-12.596 12.618v52.917c0 7.004 5.66 12.618 12.596 12.618 6.99 0 12.595-5.67 12.595-12.618V120.86z"/>
+          </svg>
+
+          <svg class="platform svg-theme" width="288" height="288" viewBox="0 0 288 288" xmlns="http://www.w3.org/2000/svg">
+            <circle class="stroke-theme" stroke="#000" fill="none" cx="144" cy="144" r="143"/>
+            <path class="fill-theme" d="M194.055 71l-50.34 66.183L94.516 71h-7.396l53.183 70.444L82 217h6.826l54.89-71.296L198.89 217H206l-58.587-75.556L200.88 71h-6.825z"/>
+          </svg>
+
+          <svg class="wire svg-theme" width="360" height="116" viewBox="0 0 360 116" xmlns="http://www.w3.org/2000/svg">
+            <path class="fill-theme" d="M131.27 71.915c0 19.232-15.472 34.878-34.7 34.878-7.745 0-14.97-2.57-20.765-6.858 6.48-7.542 10.336-17.32 10.336-28.02l.015-55.5C86.155 7.364 78.793 0 69.745 0c-9.05 0-16.41 7.364-16.41 16.414l-.015 55.5c0 10.7 4.116 20.48 10.594 28.02-5.793 4.29-13.02 6.86-20.764 6.86-19.23 0-34.958-15.647-34.958-34.88V4.21H-.013v67.705C-.013 95.67 19.483 115 43.237 115c10.07 0 19.41-3.5 26.752-9.313C77.332 111.5 86.455 115 96.526 115c23.752 0 42.947-19.33 42.947-43.085V4.21h-8.205v67.705zm-61.54 22.43c-5.11-6.07-8.205-13.892-8.205-22.43l.014-55.5c0-4.527 3.68-8.207 8.205-8.207 4.524 0 8.205 3.68 8.205 8.206l-.015 55.5c0 8.54-3.093 16.36-8.205 22.43zM164.103 3.987h8.205v108.84h-8.205V3.986zM244.143 2.09c-16.19 0-30.504 8.193-39.015 20.652V3.987h-8.205v108.84h8.205V49.324h.005c0-21.512 17.5-39.014 39.01-39.014V2.09"/>
+            <path class="fill-theme" d="M265.323 95.457l73.744-73.826c-.89-1.028-1.82-2.033-2.795-3.01-21.995-22.018-57.782-22.018-79.776 0-21.994 22.02-21.994 57.847 0 79.866 21.99 22.016 57.77 22.02 79.766.01l-5.802-5.81c-17.818 17.83-46.22 18.75-65.137 2.77zm-3.026-71.028c17.82-17.84 46.228-18.763 65.147-2.78l-67.922 68c-15.966-18.942-15.043-47.383 2.775-65.22z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Scripts -->
+    <script src="/script/docs.js"></script>
+
+    <!-- Debug -->
+    <script src="http://localhost:36963/livereload.js"></script>
+  </body>
+</html>

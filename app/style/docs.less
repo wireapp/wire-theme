@@ -1,0 +1,129 @@
+/*
+ * Wire
+ * Copyright (C) 2016 Wire Swiss GmbH
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see http://www.gnu.org/licenses/.
+ *
+ */
+
+body {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+h1,
+h2 {
+  margin-top: 32px;
+  font-weight: 500;
+}
+
+.content {
+  max-width: 960px;
+  padding: 12px;
+  margin: 0 auto;
+}
+
+
+hr {
+  border: none;
+  border-bottom: 1px solid @w-gray;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.themes {
+  display: table;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 48px;
+  width: 100%;
+  div {
+    display: table-cell;
+    width: (100% / 8);
+    padding: 0;
+  }
+  button {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.panel {
+  padding: 32px;
+  border: 1px solid transparent;
+
+  &.outlines {
+    background-color: #ccc;
+  }
+}
+
+code {
+  font-family: @font-family-monospace;
+  background-color: rgba(0,0,0,.08);
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 2px;
+  font-size: .9em;
+}
+
+svg {
+  @height: 80px;
+  max-height: @height;
+  margin-right: 8px;
+  &.platform {
+    width: @height;
+  }
+  &.w {
+    width: (@height * 140 / 116);
+  }
+  &.wire {
+    width: (@height * 360 / 116);
+  }
+}
+
+
+.border {
+  border: 1px solid;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.menu-example {
+  list-style: none;
+  border: 1px solid @w-blue;
+  padding: 0;
+  width: 256px;
+  max-width: 100%;
+  margin: 0 auto;
+  a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+  }
+}
+
+.slider-example {
+  list-style: none;
+  padding: 0;
+  width: 256px;
+  max-width: 100%;
+  margin: 0 auto;
+  li {
+    margin: 8px 0;
+  }
+  input {
+    width: 100%;
+  }
+}
