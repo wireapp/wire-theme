@@ -1,5 +1,5 @@
 {
-  "dependencies": {
+  "devDependencies": {
     "grunt": "1.0.1",
     "grunt-contrib-clean": "1.1.0",
     "grunt-contrib-coffee": "1.0.0",
@@ -21,8 +21,7 @@
     "url": "git+https://github.com/wireapp/wire-theme.git"
   },
   "scripts": {
-    "postinstall": "grunt dist",
     "start": "grunt"
   },
-  "version": "1.0.3"
+  "version": "1.0.4"
 }
