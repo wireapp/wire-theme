@@ -11,9 +11,9 @@
     "grunt-open": "0.2.3",
     "load-grunt-tasks": "3.5.2"
   },
-  "directories": {
-    "bin": "./app/style"
-  },
+  "files": [
+    "app/style/"
+  ],
   "license": "GPL-3.0",
   "name": "@wireapp/theme-css",
   "repository": {
@@ -23,5 +23,5 @@
   "scripts": {
     "start": "grunt"
   },
-  "version": "1.0.4"
+  "version": "1.0.5"
 }
