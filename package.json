@@ -1,17 +1,28 @@
 {
-  "name": "wire-theme",
-  "version": "1.0.0",
   "devDependencies": {
-    "grunt": "~0",
-    "grunt-contrib-clean": "~0",
-    "grunt-contrib-coffee": "~0",
-    "grunt-contrib-connect": "~0",
-    "grunt-contrib-copy": "~0",
-    "grunt-contrib-jasmine": "~0",
-    "grunt-contrib-less": "~0.10",
-    "grunt-contrib-watch": "~0",
-    "grunt-open": "~0",
-    "load-grunt-tasks": "~0"
+    "grunt": "1.0.1",
+    "grunt-contrib-clean": "1.1.0",
+    "grunt-contrib-coffee": "1.0.0",
+    "grunt-contrib-connect": "1.0.2",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-jasmine": "1.1.0",
+    "grunt-contrib-less": "1.4.1",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-open": "0.2.3",
+    "load-grunt-tasks": "3.5.2"
   },
-  "private": true
+  "directories": {
+    "bin": "./app/style"
+  },
+  "license": "GPL-3.0",
+  "name": "@wireapp/theme-css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wireapp/wire-theme.git"
+  },
+  "scripts": {
+    "postinstall": "grunt dist",
+    "start": "grunt"
+  },
+  "version": "1.0.0"
 }
