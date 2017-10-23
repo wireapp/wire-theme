@@ -15,7 +15,7 @@
     "app/style/"
   ],
   "license": "GPL-3.0",
-  "name": "@wireapp/theme-css",
+  "name": "@wireapp/website-theme-color",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wireapp/wire-theme.git"
