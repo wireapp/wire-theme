@@ -15,7 +15,7 @@
     "app/style/"
   ],
   "license": "GPL-3.0",
-  "name": "@wireapp/website-theme-color",
+  "name": "wire-theme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wireapp/wire-theme.git"
@@ -23,5 +23,5 @@
   "scripts": {
     "start": "grunt"
   },
-  "version": "1.0.5"
+  "version": "1.0.6"
 }
